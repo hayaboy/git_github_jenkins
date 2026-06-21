@@ -3,3 +3,5 @@ data/jenkins/
 data/jira/
 data/**/caches/
 *.log
+data/**/.git
+data/**/workspace/
