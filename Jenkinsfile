@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        any {
-            image 'python:3.12-slim'   // Python이 미리 설치된 이미지 사용
-            args '--user root'         // 권한 문제 해결
-        }
-    }
+    agent any
 
     stages {
         stage('Checkout') {
@@ -12,19 +7,15 @@ pipeline {
                 checkout scm
             }
         }
-        
-        stage('Run') {
+        stage('Install Python') {
             steps {
-                sh 'python3 --version'     // Python 버전 확인
-                sh 'ls -la'                // 파일 확인
-                sh 'python3 hello.py'
+                sh 'sudo apt-get update && sudo apt-get install -y python3'
             }
         }
-    }
-    
-    post {
-        always {
-            echo 'Pipeline 완료!'
+        stage('Run') {
+            steps {
+                sh 'python3 hello.py'
+            }
         }
     }
 }
