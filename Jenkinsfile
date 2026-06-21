@@ -7,9 +7,14 @@ pipeline {
                 checkout scm
             }
         }
+        stage('Install Python') {
+            steps {
+                sh 'apt-get update && apt-get install -y python3'
+            }
+        }
         stage('Run') {
             steps {
-                sh 'python hello.py'
+                sh 'python3 hello.py'
             }
         }
     }
