@@ -1,0 +1,5 @@
+data/
+data/jenkins/
+data/jira/
+data/**/caches/
+*.log
