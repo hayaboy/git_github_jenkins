@@ -1,0 +1,256 @@
+2026-06-21 14:42:53,408+0000 localhost-startStop-1 INFO      [c.a.jira.startup.JiraHomeStartupCheck] The jira.home directory '/var/atlassian/application-data/jira' is validated and locked for exclusive use by this instance.
+2026-06-21 14:42:53,526+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.JiraStartupLogger] 
+    
+    ****************
+    Jira starting...
+    ****************
+    
+2026-06-21 14:42:53,643+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.JiraStartupLogger] 
+    
+    ___ Environment _____________________________
+    
+         JIRA Build                                    : 8.20.10#820010-sha1:ace47f9899e9ee25d7157d59aa17ab06aee30d3d
+         Build Date                                    : Wed Jun 22 00:00:00 UTC 2022
+         JIRA Installation Type                        : Standalone
+         Application Server                            : Apache Tomcat/8.5.78 - Servlet API 3.1
+         Java Version                                  : 11.0.22 - Eclipse Adoptium
+         Current Working Directory                     : /var/atlassian/application-data/jira
+         Maximum Allowable Memory                      : 2048MB
+         Total Memory                                  : 1026MB
+         Free Memory                                   : 974MB
+         Used Memory                                   : 52MB
+         Memory Pool: CodeHeap 'non-nmethods'          : CodeHeap 'non-nmethods': init = 7598080(7420K) used = 3007488(2937K) committed = 7598080(7420K) max = 7598080(7420K)
+         Memory Pool: Metaspace                        : Metaspace: init = 0(0K) used = 22148288(21629K) committed = 23064576(22524K) max = -1(-1K)
+         Memory Pool: CodeHeap 'profiled nmethods'     : CodeHeap 'profiled nmethods': init = 33554432(32768K) used = 11077632(10818K) committed = 33554432(32768K) max = 264634368(258432K)
+         Memory Pool: Compressed Class Space           : Compressed Class Space: init = 0(0K) used = 2366936(2311K) committed = 2699264(2636K) max = 1073741824(1048576K)
+         Memory Pool: G1 Eden Space                    : G1 Eden Space: init = 56623104(55296K) used = 25165824(24576K) committed = 507510784(495616K) max = -1(-1K)
+         Memory Pool: G1 Old Gen                       : G1 Old Gen: init = 1017118720(993280K) used = 20795576(20308K) committed = 558891008(545792K) max = 2147483648(2097152K)
+         Memory Pool: G1 Survivor Space                : G1 Survivor Space: init = 0(0K) used = 9437184(9216K) committed = 9437184(9216K) max = -1(-1K)
+         Memory Pool: CodeHeap 'non-profiled nmethods' : CodeHeap 'non-profiled nmethods': init = 33554432(32768K) used = 3614336(3529K) committed = 33554432(32768K) max = 264638464(258436K)
+         JVM Input Arguments                           : --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/atlassian/jira/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Xms1024m -Xmx2048m -XX:InitialCodeCacheSize=32m -XX:ReservedCodeCacheSize=512m -Djava.awt.headless=true -Datlassian.standalone=JIRA -Dorg.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER=true -Dmail.mime.decodeparameters=true -Dorg.dom4j.factory=com.atlassian.core.xml.InterningDocumentFactory -XX:-OmitStackTraceInFastThrow -Djava.locale.providers=COMPAT -Djira.home=/var/atlassian/application-data/jira -Datlassian.plugins.startup.options=-fg -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xlog:gc*:file=/opt/atlassian/jira/logs/atlassian-jira-gc-%t.log:tags,time,uptime,level:filecount=5,filesize=20M -XX:+ExplicitGCInvokesConcurrent -Dignore.endorsed.dirs= -Dcatalina.base=/opt/atlassian/jira -Dcatalina.home=/opt/atlassian/jira -Djava.io.tmpdir=/opt/atlassian/jira/temp
+         Java Compatibility Information                : JIRA version = 8.20.10, Java Version = 11.0.22
+    
+    ___ Java System Properties _________________
+    
+         atlassian.plugins.startup.options             : -fg
+         atlassian.standalone                          : JIRA
+         awt.toolkit                                   : sun.awt.X11.XToolkit
+         catalina.base                                 : /opt/atlassian/jira
+         catalina.home                                 : /opt/atlassian/jira
+         catalina.useNaming                            : true
+         common.loader                                 : "${catalina.base}/lib",
+                                                         "${catalina.base}/lib/*.jar",
+                                                         "${catalina.home}/lib",
+                                                         "${catalina.home}/lib/*.jar"
+         file.encoding                                 : UTF-8
+         ignore.endorsed.dirs                          : 
+         java.awt.graphicsenv                          : sun.awt.X11GraphicsEnvironment
+         java.awt.headless                             : true
+         java.awt.printerjob                           : sun.print.PSPrinterJob
+         java.class.version                            : 55.0
+         java.home                                     : /opt/java/openjdk
+         java.io.tmpdir                                : /opt/atlassian/jira/temp
+         java.locale.providers                         : COMPAT
+         java.naming.factory.initial                   : org.apache.naming.java.javaURLContextFactory
+         java.naming.factory.url.pkgs                  : org.apache.naming
+         java.protocol.handler.pkgs                    : org.apache.catalina.webresources
+         java.runtime.name                             : OpenJDK Runtime Environment
+         java.runtime.version                          : 11.0.22+7
+         java.specification.maintenance.version        : 2
+         java.specification.name                       : Java Platform API Specification
+         java.specification.vendor                     : Oracle Corporation
+         java.specification.version                    : 11
+         java.util.logging.config.file                 : /opt/atlassian/jira/conf/logging.properties
+         java.util.logging.manager                     : org.apache.juli.ClassLoaderLogManager
+         java.vendor                                   : Eclipse Adoptium
+         java.vendor.url                               : https://adoptium.net/
+         java.vendor.url.bug                           : https://github.com/adoptium/adoptium-support/issues
+         java.vendor.version                           : Temurin-11.0.22+7
+         java.version                                  : 11.0.22
+         java.version.date                             : 2024-01-16
+         java.vm.compressedOopsMode                    : 32-bit
+         java.vm.info                                  : mixed mode, sharing
+         java.vm.name                                  : OpenJDK 64-Bit Server VM
+         java.vm.specification.name                    : Java Virtual Machine Specification
+         java.vm.specification.vendor                  : Oracle Corporation
+         java.vm.specification.version                 : 11
+         java.vm.vendor                                : Eclipse Adoptium
+         java.vm.version                               : 11.0.22+7
+         jdk.debug                                     : release
+         jdk.tls.ephemeralDHKeySize                    : 2048
+         jira.home                                     : /var/atlassian/application-data/jira
+         mail.mime.decodeparameters                    : true
+         org.apache.catalina.security.SecurityListener.UMASK : 0027
+         org.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER : true
+         org.dom4j.factory                             : com.atlassian.core.xml.InterningDocumentFactory
+         os.arch                                       : amd64
+         os.name                                       : Linux
+         os.version                                    : 6.18.33.1-microsoft-standard-WSL2
+         package.access                                : sun.,
+                                                         org.apache.catalina.,
+                                                         org.apache.coyote.,
+                                                         org.apache.jasper.,
+                                                         org.apache.tomcat.
+         package.definition                            : sun.,
+                                                         java.,
+                                                         org.apache.catalina.,
+                                                         org.apache.coyote.,
+                                                         org.apache.jasper.,
+                                                         org.apache.naming.,
+                                                         org.apache.tomcat.
+         server.loader                                 : 
+         shared.loader                                 : 
+         sun.arch.data.model                           : 64
+         sun.boot.library.path                         : /opt/java/openjdk/lib
+         sun.cpu.endian                                : little
+         sun.cpu.isalist                               : 
+         sun.io.unicode.encoding                       : UnicodeLittle
+         sun.java.command                              : org.apache.catalina.startup.Bootstrap start
+         sun.java.launcher                             : SUN_STANDARD
+         sun.jnu.encoding                              : UTF-8
+         sun.management.compiler                       : HotSpot 64-Bit Tiered Compilers
+         sun.os.patch.level                            : unknown
+         tomcat.util.buf.StringCache.byte.enabled      : true
+         tomcat.util.scan.StandardJarScanFilter.jarsToScan : log4j-taglib*.jar,
+                                                         log4j-web*.jar,
+                                                         log4javascript*.jar,
+                                                         slf4j-taglib*.jar
+         tomcat.util.scan.StandardJarScanFilter.jarsToSkip : annotations-api.jar,
+                                                         ant-junit*.jar,
+                                                         ant-launcher.jar,
+                                                         ant.jar,
+                                                         asm-*.jar,
+                                                         aspectj*.jar,
+                                                         bootstrap.jar,
+                                                         catalina-ant.jar,
+                                                         catalina-ha.jar,
+                                                         catalina-jmx-remote.jar,
+                                                         catalina-storeconfig.jar,
+                                                         catalina-tribes.jar,
+                                                         catalina-ws.jar,
+                                                         catalina.jar,
+                                                         cglib-*.jar,
+                                                         cobertura-*.jar,
+                                                         commons-beanutils*.jar,
+                                                         commons-codec*.jar,
+                                                         commons-collections*.jar,
+                                                         commons-daemon.jar,
+                                                         commons-dbcp*.jar,
+                                                         commons-digester*.jar,
+                                                         commons-fileupload*.jar,
+                                                         commons-httpclient*.jar,
+                                                         commons-io*.jar,
+                                                         commons-lang*.jar,
+                                                         commons-logging*.jar,
+                                                         commons-math*.jar,
+                                                         commons-pool*.jar,
+                                                         derby-*.jar,
+                                                         dom4j-*.jar,
+                                                         easymock-*.jar,
+                                                         ecj-*.jar,
+                                                         el-api.jar,
+                                                         geronimo-spec-jaxrpc*.jar,
+                                                         h2*.jar,
+                                                         ha-api-*.jar,
+                                                         hamcrest-*.jar,
+                                                         hibernate*.jar,
+                                                         httpclient*.jar,
+                                                         icu4j-*.jar,
+                                                         jasper-el.jar,
+                                                         jasper.jar,
+                                                         jaspic-api.jar,
+                                                         jaxb-*.jar,
+                                                         jaxen-*.jar,
+                                                         jaxws-rt-*.jar,
+                                                         jdom-*.jar,
+                                                         jetty-*.jar,
+                                                         jmx-tools.jar,
+                                                         jmx.jar,
+                                                         jsp-api.jar,
+                                                         jstl.jar,
+                                                         jta*.jar,
+                                                         junit-*.jar,
+                                                         junit.jar,
+                                                         log4j*.jar,
+                                                         mail*.jar,
+                                                         objenesis-*.jar,
+                                                         oraclepki.jar,
+                                                         oro-*.jar,
+                                                         servlet-api-*.jar,
+                                                         servlet-api.jar,
+                                                         slf4j*.jar,
+                                                         taglibs-standard-spec-*.jar,
+                                                         tagsoup-*.jar,
+                                                         tomcat-api.jar,
+                                                         tomcat-coyote.jar,
+                                                         tomcat-dbcp.jar,
+                                                         tomcat-i18n-*.jar,
+                                                         tomcat-jdbc.jar,
+                                                         tomcat-jni.jar,
+                                                         tomcat-juli-adapters.jar,
+                                                         tomcat-juli.jar,
+                                                         tomcat-util-scan.jar,
+                                                         tomcat-util.jar,
+                                                         tomcat-websocket.jar,
+                                                         tools.jar,
+                                                         websocket-api.jar,
+                                                         wsdl4j*.jar,
+                                                         xercesImpl.jar,
+                                                         xml-apis.jar,
+                                                         xmlParserAPIs-*.jar,
+                                                         xmlParserAPIs.jar,
+                                                         xom-*.jar
+         user.country                                  : US
+         user.dir                                      : /var/atlassian/application-data/jira
+         user.home                                     : /var/atlassian/application-data/jira
+         user.language                                 : en
+         user.name                                     : jira
+         user.timezone                                 : Etc/UTC
+    
+2026-06-21 14:42:53,991+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2026-06-21 14:42:54,031+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Trying to get encrypted password from xml and decrypt it
+2026-06-21 14:42:54,032+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Database password decryption not performed.
+2026-06-21 14:42:54,075+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2026-06-21 14:42:54,079+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Trying to get encrypted password from xml and decrypt it
+2026-06-21 14:42:54,080+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Database password decryption not performed.
+2026-06-21 14:42:54,081+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2026-06-21 14:42:54,086+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Trying to get encrypted password from xml and decrypt it
+2026-06-21 14:42:54,087+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Database password decryption not performed.
+2026-06-21 14:42:54,709+0000 JIRA-Bootstrap INFO      [c.a.j.c.cache.pauser.NonClusteredReplicationPauserManager] Non-clustered mode: ReplicationPauserManager implemented by NonClusteredReplicationPauserManager 
+2026-06-21 14:42:54,713+0000 JIRA-Bootstrap INFO      [c.a.jira.plugin.JiraCacheResetter] [jira-cache-reseter] Created and registered for events
+2026-06-21 14:42:54,719+0000 JIRA-Bootstrap INFO      [c.a.jira.plugin.PluginTransactionListener] [plugin-transaction] Created, registered for events and scheduled stats job every: 5 min
+2026-06-21 14:42:54,737+0000 JIRA-Bootstrap INFO      [c.a.jira.i18n.CachingI18nFactory] [i18n-caching-factory] Created
+2026-06-21 14:42:55,476+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2026-06-21 14:42:55,482+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Trying to get encrypted password from xml and decrypt it
+2026-06-21 14:42:55,482+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Database password decryption not performed.
+2026-06-21 14:42:55,494+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.JiraStartupLogger] 
+    
+    ___ Starting the JIRA Plugin System _________________
+    
+2026-06-21 14:42:55,496+0000 JIRA-Bootstrap INFO      [c.a.plugin.manager.DefaultPluginManager] Plugin system earlyStartup begun
+2026-06-21 14:43:01,202+0000 FelixStartLevel WARN      [o.e.g.b.e.internal.support.ExtenderConfiguration] Gemini Blueprint extensions bundle not present, annotation processing disabled.
+2026-06-21 14:43:02,696+0000 JIRA-Bootstrap INFO      [c.a.plugin.loaders.ScanningPluginLoader] No plugins found to be deployed
+2026-06-21 14:43:04,069+0000 ThreadPoolAsyncTaskExecutor::Thread 4 WARN      [c.a.p.s.scanner.util.ProductFilterUtil] Couldn't detect product, no known services found: will use ProductFilter.ALL
+2026-06-21 14:43:04,233+0000 JIRA-Bootstrap INFO      [c.a.plugin.util.WaitUntil] Plugins that have yet to be enabled: (2): [com.atlassian.soy.soy-template-plugin, com.atlassian.jira.jira-less-integration], 300 seconds remaining
+2026-06-21 14:43:05,234+0000 JIRA-Bootstrap INFO      [c.a.plugin.util.WaitUntil] Plugins that have yet to be enabled: (1): [com.atlassian.soy.soy-template-plugin], 298 seconds remaining
+2026-06-21 14:43:06,235+0000 JIRA-Bootstrap INFO      [c.a.plugin.util.WaitUntil] Plugins that have yet to be enabled: (1): [com.atlassian.soy.soy-template-plugin], 297 seconds remaining
+2026-06-21 14:43:07,461+0000 JIRA-Bootstrap INFO      [c.a.plugin.manager.DefaultPluginManager] Plugin system earlyStartup ended
+2026-06-21 14:43:07,467+0000 JIRA-Bootstrap INFO      [c.a.jira.i18n.CachingI18nFactory] [i18n-caching-factory] Starting
+2026-06-21 14:43:07,545+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2026-06-21 14:43:07,551+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Trying to get encrypted password from xml and decrypt it
+2026-06-21 14:43:07,552+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Database password decryption not performed.
+2026-06-21 14:43:07,598+0000 JIRA-Bootstrap INFO      [c.a.j.instrumentation.external.DatabaseExternalGauges] Installing DBCP monitoring instruments: DatabaseExternalGauges.JiraDbcpInstruments[instruments=[DBCP_MAX, DBCP_ACTIVE, DBCP_IDLE],objectName=com.atlassian.jira:name=BasicDataSource]
+2026-06-21 14:43:07,623+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.JiraStartupLogger] Running Jira startup checks.
+2026-06-21 14:43:07,624+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.JiraStartupLogger] Jira pre-database startup checks completed successfully.
+2026-06-21 14:43:07,708+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigurationManagerImpl] The database is not yet configured. Enqueuing Database Checklist Launcher on post-database-configured-but-pre-database-activated queue
+2026-06-21 14:43:07,709+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigurationManagerImpl] The database is not yet configured. Enqueuing Post database-configuration launchers on post-database-activated queue
+2026-06-21 14:43:07,725+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.LauncherContextListener] Startup is complete. Jira is ready to serve.
+2026-06-21 14:43:07,728+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.LauncherContextListener] Memory Usage:
+    ---------------------------------------------------------------------------------
+      Heap memory     :  Used:  554 MiB.  Committed: 1026 MiB.  Max: 2048 MiB
+      Non-heap memory :  Used:   91 MiB.  Committed:  131 MiB.  Max: 1536 MiB
+    ---------------------------------------------------------------------------------
+      TOTAL           :  Used:  645 MiB.  Committed: 1157 MiB.  Max: 3584 MiB
+    ---------------------------------------------------------------------------------
+2026-06-21 14:47:54,704+0000 plugin-transaction-0 INFO      [c.a.jira.plugin.PluginTransactionListener] [JIRA-STATS] [plugin-transaction] numberStartEvents:4, numberEndEvents:4, numberSendEvents:38, numberEventsInTransactions:1954, numberOfPluginEnableEvents:37
+2026-06-21 14:52:54,679+0000 plugin-transaction-0 INFO      [c.a.jira.plugin.PluginTransactionListener] [JIRA-STATS] [plugin-transaction] numberStartEvents:4, numberEndEvents:4, numberSendEvents:38, numberEventsInTransactions:1954, numberOfPluginEnableEvents:37

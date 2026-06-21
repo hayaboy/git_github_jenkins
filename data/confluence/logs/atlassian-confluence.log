@@ -1,0 +1,19 @@
+2026-06-21 14:42:43,579 INFO [Catalina-utility-1] [com.atlassian.confluence.lifecycle] contextInitialized Starting Confluence 7.19.5 [build 8804 based on commit hash 8d4b59125ca6b4a3a0f3cec36d482d8ec92cd398] - synchrony version 5.0.3
+2026-06-21 14:42:46,500 WARN [Catalina-utility-1] [com.atlassian.config.ApplicationConfig] setApplicationHome Application home does not exist. Creating directory: /var/atlassian/application-data/confluence/shared-home
+2026-06-21 14:42:46,509 INFO [Catalina-utility-1] [atlassian.confluence.cluster.DefaultClusterConfigurationHelper] lambda$saveSetupConfigIntoSharedHome$9 Writing setup configuration into shared home...
+2026-06-21 14:42:46,530 INFO [Catalina-utility-1] [atlassian.confluence.cluster.DefaultClusterConfigurationHelper] lambda$saveSetupConfigIntoSharedHome$9 Finished writing setup configuration into shared home
+2026-06-21 14:42:47,775 INFO [Catalina-utility-1] [atlassian.plugin.manager.DefaultPluginManager] lambda$earlyStartup$5 Plugin system earlyStartup begun
+2026-06-21 14:42:48,745 WARN [Catalina-utility-1] [org.twdata.pkgscanner.ExportPackageListBuilder] logDuplicateWarning Package Scanner found duplicates for package 'org.cyberneko.html.xercesbridge' with different versions. Files: xerces-bridge-2-2-1.9.22-atlassian-2.jar and xerces-bridge-2-3-1.9.22-atlassian-2.jar
+  '/opt/atlassian/confluence/confluence/WEB-INF/lib/xerces-bridge-2-2-1.9.22-atlassian-2.jar'
+  '/opt/atlassian/confluence/confluence/WEB-INF/lib/xerces-bridge-2-3-1.9.22-atlassian-2.jar'
+2026-06-21 14:42:48,748 WARN [Catalina-utility-1] [org.twdata.pkgscanner.ExportPackageListBuilder] logDuplicateWarning Package Scanner found duplicates for package 'org.cyberneko.html.xercesbridge' with different versions. Files: xerces-bridge-2-0-1.9.22-atlassian-2.jar and xerces-bridge-2-2-1.9.22-atlassian-2.jar
+  '/opt/atlassian/confluence/confluence/WEB-INF/lib/xerces-bridge-2-0-1.9.22-atlassian-2.jar'
+  '/opt/atlassian/confluence/confluence/WEB-INF/lib/xerces-bridge-2-2-1.9.22-atlassian-2.jar'
+2026-06-21 14:42:48,750 WARN [Catalina-utility-1] [org.twdata.pkgscanner.ExportPackageListBuilder] logDuplicateWarning Package Scanner found duplicates for package 'org.cyberneko.html.xercesbridge' with different versions. Files: xerces-bridge-1.9.22-atlassian-2.jar and xerces-bridge-2-0-1.9.22-atlassian-2.jar
+  '/opt/atlassian/confluence/confluence/WEB-INF/lib/xerces-bridge-1.9.22-atlassian-2.jar'
+  '/opt/atlassian/confluence/confluence/WEB-INF/lib/xerces-bridge-2-0-1.9.22-atlassian-2.jar'
+2026-06-21 14:42:50,705 WARN [FelixStartLevel] [extender.internal.support.ExtenderConfiguration] addDefaultDependencyFactories Gemini Blueprint extensions bundle not present, annotation processing disabled.
+2026-06-21 14:42:52,431 INFO [Catalina-utility-1] [atlassian.plugin.manager.DefaultPluginManager] logTime Plugin system earlyStartup ended
+2026-06-21 14:42:52,435 INFO [Catalina-utility-1] [atlassian.plugin.manager.DefaultPluginManager] lambda$lateStartup$6 Plugin system lateStartup begun
+2026-06-21 14:42:54,027 INFO [Catalina-utility-1] [atlassian.plugin.manager.DefaultPluginManager] logTime Plugin system lateStartup ended
+2026-06-21 14:42:54,579 INFO [Catalina-utility-1] [com.atlassian.confluence.lifecycle] init Confluence is ready to serve
