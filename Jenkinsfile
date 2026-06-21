@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker {
+        any {
             image 'python:3.12-slim'   // Python이 미리 설치된 이미지 사용
             args '--user root'         // 권한 문제 해결
         }
