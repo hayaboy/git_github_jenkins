@@ -1,1 +1,1 @@
-﻿print("Hello, Jenkins from Docker!")
+print("Hello, Jenkins from Docker!")
